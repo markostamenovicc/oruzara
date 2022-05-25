@@ -16,7 +16,7 @@ namespace oruzara
             InitializeComponent();
         }
 
-        private void SKladiste_Load(object sender, EventArgs e)
+        private void SKladiste_Load(object sender, EventArgs e) 
         {
             SqlDataAdapter adapter = new SqlDataAdapter("select puska.id,ime,sifra,datum_uvoza,kapacitet_sanzera,metkovi.vrsta from puska join metkovi on puska.metak = Metkovi.id", Konekcija.Connect());
             DataTable table = new DataTable();
